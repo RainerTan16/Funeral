@@ -1,9 +1,10 @@
 <?php
 // Database configuration
-define('DB_HOST', 'sql100.infinityfree.com');
-define('DB_USER', 'if0_41314439');
-define('DB_PASS', 'sqxXHhmjqcLO0Rb');
-define('DB_NAME', 'if0_41314439_y2j_funeral');
+define('DB_HOST', 'trolley.proxy.rlwy.net');
+define('DB_USER', 'root');
+define('DB_PASS', 'XfxjvZoSeKkScRHOJbHgcyFylZibsERD');
+define('DB_NAME', 'railway');
+define('DB_PORT', 53246);
 
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
