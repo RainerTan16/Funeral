@@ -6,7 +6,7 @@ define('DB_PASS', 'XfxjvZoSeKkScRHOJbHgcyFylZibsERD');
 define('DB_NAME', 'railway');
 define('DB_PORT', 53246);
 
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
 
 if ($conn->connect_error) {
     die(json_encode(['error' => 'Database connection failed: ' . $conn->connect_error]));
