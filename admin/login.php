@@ -130,7 +130,7 @@ function sendOTP($username, $otp) {
         <form method="POST">
             <div class="login-field">
                 <label>Username</label>
-                <input type="number" name="username" required autofocus>
+                <input type="text" name="username" required autofocus>
             </div>
             <div class="login-field">
                 <label>Password</label>
@@ -150,7 +150,8 @@ function sendOTP($username, $otp) {
             <div class="login-field">
                 <label>OTP Code</label>
                 <input type="number" name="otp" maxlength="6" placeholder="000000" required autofocus
-                       style="text-align:center;font-size:1.5rem;letter-spacing:0.3em">
+    style="text-align:center;font-size:1.5rem;letter-spacing:0.3em"
+    onkeydown="if(['e','E','+','-','.'].includes(event.key)) event.preventDefault()">
             </div>
             <br>
             <button type="submit" name="verify_otp" class="btn btn-gold" style="width:100%">VERIFY OTP</button>
