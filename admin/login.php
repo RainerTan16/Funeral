@@ -149,7 +149,7 @@ function sendOTP($username, $otp) {
         <form method="POST">
             <div class="login-field">
                 <label>OTP Code</label>
-                <input type="text" name="otp" maxlength="6" placeholder="000000" required autofocus
+                <input type="number" name="otp" maxlength="6" placeholder="000000" required autofocus
                        style="text-align:center;font-size:1.5rem;letter-spacing:0.3em">
             </div>
             <br>
