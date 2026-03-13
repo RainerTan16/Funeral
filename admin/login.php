@@ -130,7 +130,7 @@ function sendOTP($username, $otp) {
         <form method="POST">
             <div class="login-field">
                 <label>Username</label>
-                <input type="text" name="username" required autofocus>
+                <input type="number" name="username" required autofocus>
             </div>
             <div class="login-field">
                 <label>Password</label>
