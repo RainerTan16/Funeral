@@ -165,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm'])) {
             <input type="text" name="deceased_name" value="<?= htmlspecialchars($_SESSION['bres_dec_name'] ?? $_POST['deceased_name'] ?? '') ?>" placeholder="Full name of the deceased">
         </div>
         <div class="form-group">
-            <label>Age at Time of Death:</label>
+            <label>Age:</label>
             <input type="number" name="deceased_age" value="<?= htmlspecialchars($_SESSION['bres_dec_age'] ?? $_POST['deceased_age'] ?? '') ?>" min="0" max="130" placeholder="e.g. 72">
         </div>
         <div class="form-group">
